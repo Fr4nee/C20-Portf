@@ -22,15 +22,33 @@ body {
   z-index: 0;
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1 !important;
+  position: fixed;
+  text-align: center Import !important;
+  width: 100% !important;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+  background-color: black;
+}
+
+.navbar-nav {
+  justify-content: space-between !important;
+}
+
 .hvid {
   object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: -1;
-  position: relative;
+  position: absolute;
 }
 
 .tit {
+  position: relative;
   color: #a9d6fa;
 }
 
