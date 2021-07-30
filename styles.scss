@@ -49,9 +49,16 @@ body {
 
 .main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: beige;
     border: 1px solid red;
+}
+.subtit::before {
+    display: block;
+    content: " ";
+    margin-top: 60px;
+    height: 60px;
+    visibility: hidden;
 }
 
 .footer {
