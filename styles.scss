@@ -47,12 +47,26 @@ body {
     color: rgb(169, 214, 250);     
 }
 
+
 .main {
     width: 100%;
     min-height: 100vh;
-    background-color: beige;
-    border: 1px solid red;
 }
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imgg {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    justify-content: center;
+}
+
+
+
 .subtit::before {
     display: block;
     content: " ";
@@ -67,137 +81,4 @@ body {
     background-color: beige;
     border: 1px solid red;
 }
-
-
-// Cards Cami , Nico , Fran y Facu
-main {
-    
-  background: #1D1F20;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Righteous", cursive;
-  min-height: 100vh;
-}
-.container {
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 35px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-.tarjeta-wrap{
-margin: 10px;
--webkit-perspective: 800;
-perspective: 800;
-}
-
-.tarjeta{
-  
-width: 300px;
-height: 350px;
-background: #F29720;
-position: relative;
--webkit-transform-style: preserve-3d;
-transform-style: preserve-3d;
--webkit-transition: .7s ease;
-transition: .7s ease;
--webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-
-}
-
-.adelante, .atras{
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
-}
-
-.adelante{
-width: 100%;
-}
-
-.atras{
--webkit-transform: rotateY(180deg);
-transform: rotateY(180deg);
-
-padding: 15px;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: center;
--webkit-justify-content: center;
--ms-flex-pack: center;
-justify-content: center;
--webkit-box-align: center;
--webkit-align-items: center;
--ms-flex-align: center;
-align-items: center;
-
-text-align: center;
-color: #fff;
-font-family: "open sans";
-
-}
-
-.Cp{
-  background-color: red;
-}
-.Nc{
-  background-color: green;
-}
-.Fr{
-  background-color: grey; 
-}
-
-.Fc{
-  background-color: hotpink;
-}
-
-
-.tarjeta-wrap:hover .tarjeta{
--webkit-transform: rotateY(180deg);
-transform: rotateY(180deg);
-} 
-
-
-
-
-.card1 .Cami{
-
-  background-repeat: no-repeat;
-  object-fit: cover;
-
-}
-
-.card2 .Nico{
-
-  background-repeat: no-repeat;
-  object-fit: cover;
-
-}
-
-.card3 .Frane{
-
-  background-repeat: no-repeat;
-  object-fit: cover;
-
-}
-
-.card4 .Facu{
-
-  background-repeat: no-repeat;
-  object-fit: cover;
-
-  
-}
-    
 
