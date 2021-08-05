@@ -1,19 +1,20 @@
 @import url(./node_modules/bootstrap/scss/bootstrap.scss);
 
+// HTML Y BODY
 html { 
-    // -ms-overflow-style: none;
-    // scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     width: 100%;
     height: 100%;
 }
-// html::-webkit-scrollbar {
-//     display: none;
-// }
+html::-webkit-scrollbar {
+    display: none;
+}
 body {
     width: 100%;
     box-sizing: content-box;
 }
-
+// HEADER
 .header {
     width: 100%;
     height: 100vh;
@@ -24,7 +25,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     z-index: 1 !important;
     position: fixed;
-    text-align: center Import !important;
+    text-align: center !important;
     width: 100% !important;
     transition: 0.3s ease-in-out;
 }
@@ -32,9 +33,10 @@ body {
     background-color:rgb(0, 0, 0);
 }
 .navbar-nav {
-    justify-content: space-between !important;
+    display: flex;
+    justify-content: space-evenly !important;
+    width: 100%;
 }
-
 .hvid {
     object-fit: cover;
     width: 100%;
@@ -46,30 +48,51 @@ body {
     position: relative ;
     color: rgb(169, 214, 250);     
 }
+
+// MAIN
 .main {
     width: 100%;
-    min-height: 100vh;
-    
+    min-height: 100vh;  
 }
-.services {
+.subtit {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar {
+    width: 220px;
+    height: 5px;
+    background-color: black;
+    display: block;
+}
+.au {
+    width: 40%;
+}
+.serv {
     margin-bottom: 5em;
-    margin-top: 5em;
-    width: 100%;
+    margin-top: 4em;
 }
 .s_img_demo {
     width: 100px;
     height: 100px;
 }
-
-
 .col_img{
     margin-top: 2%;
     margin-bottom: 10%;
     margin-left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100%;
     position: relative;
     transition: all 1s ease;
     transform-style: preserve-3d;
+}
+.btn_img {
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
 }
 .c_front {
     width: 100%;
@@ -158,6 +181,11 @@ body {
 
 
 
+
+#5cbca8
+#079a9c
+#036a9a
+#28366c
 
 
 
