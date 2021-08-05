@@ -1,14 +1,14 @@
 @import url(./node_modules/bootstrap/scss/bootstrap.scss);
 
 html { 
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
     width: 100%;
     height: 100%;
 }
-html::-webkit-scrollbar {
-    display: none;
-}
+// html::-webkit-scrollbar {
+//     display: none;
+// }
 body {
     width: 100%;
     box-sizing: content-box;
@@ -46,13 +46,23 @@ body {
     position: relative ;
     color: rgb(169, 214, 250);     
 }
-
 .main {
     width: 100%;
     min-height: 100vh;
     
 }
-.col{
+.services {
+    margin-bottom: 5em;
+    margin-top: 5em;
+    width: 100%;
+}
+.s_img_demo {
+    width: 100px;
+    height: 100px;
+}
+
+
+.col_img{
     margin-top: 2%;
     margin-bottom: 10%;
     margin-left: 0;
@@ -61,58 +71,102 @@ body {
     transition: all 1s ease;
     transform-style: preserve-3d;
 }
-.card {
+.c_front {
     width: 100%;
     height: 100%;
-    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
     backface-visibility: hidden;
     top: 0;
-    border: 10px solid salmon;
-    border-radius: 100%;
 }
-.atras{
-    width: 100%;
-    height: 100%;
+.c_f_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+    border: 5px solid salmon;
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+.col_img:hover{
+    transform: rotateY(180deg);
+}
+.c_back{
+    width: 300px;
+    height: 300px;
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
     transform: rotateY(180deg);
-    border: 10px solid springgreen;
+    border: 5px solid springgreen;
     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
     backface-visibility: hidden;
     border-radius: 100%;
 }
-.atras h2 p {
+.c_back h2 p {
     border: 1px solid green;
-}
-.col:hover{
-    transform: rotateY(180deg);
-}
-
-.imgg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    justify-content: center;
-    border-radius: 100%;
 }
 
 #Cami{
     background-color: black;
 }
-
 #Nico{
     background-color: brown;
 }
-
 #Frane{
     background-color: saddlebrown;
 }
-
 #Facu{
     background-color: rgba(0,0,0,0.65);
 }
+
+.footer {
+    width: 100%;
+    height: 370px;
+    background-color: rgb(81, 152, 199);
+}
+.f_main {
+    display: flex;
+    width: 100%;
+    min-height: calc(350px - 30px);
+    justify-content: space-evenly;
+}
+.redes {
+    width: 500px;
+}
+.f_r_col {
+    width: 100%;
+}
+.formulario {
+    width: 500px;
+}
+.brand {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .subtit::before {
@@ -122,11 +176,3 @@ body {
     height: 60px;
     visibility: hidden;
 }
-
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: beige;
-    border: 1px solid red;
-}
-
