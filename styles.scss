@@ -1,5 +1,6 @@
 @import url(./node_modules/bootstrap/scss/bootstrap.scss);
 
+// HTML Y BODY
 html { 
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -13,7 +14,7 @@ body {
     width: 100%;
     box-sizing: content-box;
 }
-
+// HEADER
 .header {
     width: 100%;
     height: 100vh;
@@ -24,7 +25,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     z-index: 1 !important;
     position: fixed;
-    text-align: center Import !important;
+    text-align: center !important;
     width: 100% !important;
     transition: 0.3s ease-in-out;
 }
@@ -32,9 +33,10 @@ body {
     background-color:rgb(0, 0, 0);
 }
 .navbar-nav {
-    justify-content: space-between !important;
+    display: flex;
+    justify-content: space-evenly !important;
+    width: 100%;
 }
-
 .hvid {
     object-fit: cover;
     width: 100%;
@@ -47,12 +49,154 @@ body {
     color: rgb(169, 214, 250);     
 }
 
+// MAIN
 .main {
     width: 100%;
-    min-height: 100vh;
-    background-color: beige;
-    border: 1px solid red;
+    min-height: 100vh;  
 }
+.subtit {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar {
+    width: 220px;
+    height: 5px;
+    background-color: black;
+    display: block;
+}
+.au {
+    width: 40%;
+}
+.serv {
+    margin-bottom: 5em;
+    margin-top: 4em;
+}
+.s_img_demo {
+    width: 100px;
+    height: 100px;
+}
+.col_img{
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+.btn_img {
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.c_front {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+}
+.c_f_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+    border: 5px solid salmon;
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+.col_img:hover{
+    transform: rotateY(180deg);
+}
+.c_back{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    transform: rotateY(180deg);
+    border: 5px solid springgreen;
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    backface-visibility: hidden;
+    border-radius: 100%;
+}
+.c_back h2 p {
+    border: 1px solid green;
+}
+
+#Cami{
+    background-color: black;
+}
+#Nico{
+    background-color: brown;
+}
+#Frane{
+    background-color: saddlebrown;
+}
+#Facu{
+    background-color: rgba(0,0,0,0.65);
+}
+
+.footer {
+    width: 100%;
+    height: 370px;
+    background-color: rgb(81, 152, 199);
+}
+.f_main {
+    display: flex;
+    width: 100%;
+    min-height: calc(350px - 30px);
+    justify-content: space-evenly;
+}
+.redes {
+    width: 500px;
+}
+.f_r_col {
+    width: 100%;
+}
+.formulario {
+    width: 500px;
+}
+.brand {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+#5cbca8
+#079a9c
+#036a9a
+#28366c
+
+
+
+
+
+
+
+
+
+
+
 .subtit::before {
     display: block;
     content: " ";
@@ -60,13 +204,3 @@ body {
     height: 60px;
     visibility: hidden;
 }
-
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: beige;
-    border: 1px solid red;
-}
-
-
-
