@@ -12,6 +12,7 @@ html::-webkit-scrollbar {
 }
 body {
     width: 100%;
+    height: 100%;
     box-sizing: content-box;
 }
 // HEADER
@@ -135,6 +136,7 @@ body {
 
 #Cami{
     background-color: black;
+    z-index: -1;
 }
 #Nico{
     background-color: brown;
@@ -173,6 +175,15 @@ body {
     color: aliceblue;
 }
 
+
+.fade {
+    width: 100%;
+    height: 100%;
+}
+.modal-content{
+    width: 100%;
+  
+}
 
 
 
