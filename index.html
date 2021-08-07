@@ -249,27 +249,33 @@
 
             </div>
             <!-- FORMULARIO -->
+        <form name="formulario" method="post" action="ProcesarDatos.php">
             <div class="row formulario p-3">
                 <h3>¡No dudes en contactarnos!</h3>
                 <div class="row mb-2">
                     <div class="col">
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <input type="text" class="form-control" placeholder="Name" aria-label="Name" name="name">
                     </div>
                     <div class="col">
-                        <label for="surname" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        <label for="surname" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email" name="email">
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col mb-2">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Email">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;"></textarea>
+                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                        <input type="tel" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Telephone" name="tel">
+                        <label for="exampleFormControlTextarea1" class="form-label">Coment</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment"></textarea>
+                        <input type="submit">
                     </div>
                 </div>
             </div>
+        </form>
+        <?php
+        include("ProcesarDatos.php")
+        ?>
         </div>
         <!-- BRAND -->
         <div class="container-fluid brand text-center">
