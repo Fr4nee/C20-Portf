@@ -106,26 +106,26 @@
 
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Launch demo modal
-                      </button>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
 
 
                 </div>
@@ -178,8 +178,9 @@
                 <h2>Subtitulo</h2>
                 <div class="bar"> </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 ">
+
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -190,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -201,7 +202,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -212,7 +213,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -251,24 +252,30 @@
             <!-- FORMULARIO -->
             <div class="row formulario p-3">
                 <h3>¡No dudes en contactarnos!</h3>
+            <form name="formm" method="POST" action="datos.php">
                 <div class="row mb-2">
+
                     <div class="col">
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <input type="text" name="name" class="form-control" placeholder="First name" aria-label="First name">
                     </div>
                     <div class="col">
-                        <label for="surname" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col mb-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Email">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;"></textarea>
+                        <input type="email" name="email" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Email">
                     </div>
+                    <div class="col">
+                        <label for="tel" class="form-label">Tel</label>
+                        <input type="tel" name="tel" class="form-control" placeholder="tel" aria-label="tel">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                        <input type="text" name="comentario" class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;">
+                    </div>
+                    
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
             </div>
         </div>
         <!-- BRAND -->
