@@ -17,6 +17,7 @@ function traducir() {
 
 function showModal() {
     document.getElementById("pageContent").style.opacity = "0.5";
+}
 
 // MODAL
 // var myModal = document.getElementById('modal')
