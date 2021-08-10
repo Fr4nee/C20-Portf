@@ -177,8 +177,9 @@
                 <h2>Subtitulo</h2>
                 <div class="bar"> </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 ">
+
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -189,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -200,7 +201,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -211,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="p_col">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/cardproyectdemo.png" class="card-img-top">
                         <div class="card-body">
@@ -251,7 +252,9 @@
         <form name="formulario" method="post" action="Conexion.php">
             <div class="row formulario p-3">
                 <h3>¡No dudes en contactarnos!</h3>
+            <form name="formm" method="POST" action="datos.php">
                 <div class="row mb-2">
+
                     <div class="col">
                         <label for="name" class="form-label">Nombre</label>
                         <input type="text" class="form-control" placeholder="Name" aria-label="Name" name="name">
@@ -269,7 +272,10 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment"></textarea>
                         <input type="submit">
                     </div>
+                    
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
             </div>
         </form>
         <?php
