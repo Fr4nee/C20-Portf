@@ -1,4 +1,10 @@
 @import url(./node_modules/bootstrap/scss/bootstrap.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -13,14 +19,12 @@ html::-webkit-scrollbar {
 body {
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .header {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.65);
   z-index: 0;
 }
 
@@ -30,7 +34,6 @@ body {
   position: fixed;
   text-align: center !important;
   width: 100% !important;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -39,18 +42,13 @@ body {
 }
 
 .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly !important;
-      -ms-flex-pack: space-evenly !important;
-          justify-content: space-evenly !important;
+  justify-content: space-evenly !important;
   width: 100%;
 }
 
 .hvid {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -69,16 +67,9 @@ body {
 
 .subtit {
   margin-top: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bar {
@@ -99,7 +90,7 @@ body {
 
 .s_img_demo {
   width: 100px;
-  height: 100px;
+  height: 100vh;
 }
 
 .col_img {
@@ -112,10 +103,8 @@ body {
   bottom: 0;
   height: 100%;
   position: relative;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .btn_img {
@@ -126,27 +115,23 @@ body {
 .c_front {
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   top: 0;
 }
 
 .c_f_img {
   width: 300px;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
   margin: auto;
   display: block;
   border: 5px solid salmon;
-  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-          box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
 }
 
 .col_img:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .c_back {
@@ -159,13 +144,10 @@ body {
   bottom: 0;
   margin: auto;
   display: block;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   border: 5px solid springgreen;
-  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-          box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  backface-visibility: hidden;
   border-radius: 100%;
 }
 
@@ -208,14 +190,10 @@ body {
 }
 
 .f_main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-height: calc(350px - 30px);
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .redes {
