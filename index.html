@@ -249,10 +249,9 @@
 
             </div>
             <!-- FORMULARIO -->
-        <form name="formulario" method="post" action="Conexion.php">
+        <form name="formulario" method="POST" action="Conexion.php">
             <div class="row formulario p-3">
                 <h3>¡No dudes en contactarnos!</h3>
-            <form name="formm" method="POST" action="datos.php">
                 <div class="row mb-2">
 
                     <div class="col">
@@ -268,14 +267,15 @@
                     <div class="col mb-2">
                         <label for="exampleFormControlInput1" class="form-label">Telefono</label>
                         <input type="tel" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Telephone" name="tel">
+
                         <label for="exampleFormControlTextarea1" class="form-label">Coment</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment"></textarea>
+                        
                         <input type="submit">
                     </div>
                     
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
             </div>
         </form>
         <?php
