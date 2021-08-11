@@ -1,6 +1,6 @@
 <?php
 
-$conexion = mysqli_connect('c20-portf.c0rxhojittix.us-east-2.rds.amazonaws.com','admin','adminroot','cveinte')or die(mysqli_error($mysqli));
+$conexion = mysqli_connect('c20-portf.c0rxhojittix.us-east-2.rds.amazonaws.com','admin','laconchadetumadre','cveinte')or die(mysqli_error($mysqli));
 
 Insertar($conexion);
 
