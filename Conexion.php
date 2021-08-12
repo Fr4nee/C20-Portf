@@ -1,11 +1,6 @@
 <?php
 
-$usuario = "admin";
-$password = "laconchadetumadre";
-$servidor = "c20-portf.c0rxhojittix.us-east-2.rds.amazonaws.com";
-$basededatos = "cveinte";
-
-$conexion = mysqli_connect($servidor, $usuario, $password, $basededatos) or die ("Error");
+$conexion = mysqli_connect('c20-portf.c0rxhojittix.us-east-2.rds.amazonaws.com','admin','laconchadetumadre','cveinte')or die(mysqli_error($mysqli));
 
 Insertar($conexion);
 
