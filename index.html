@@ -20,10 +20,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 me-auto mb-lg-0 ">
-                        <li class="nav-item"><a class="nav-link" href="#1">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#2">Home</a></li>                        
-                        <li class="nav-item"><a class="nav-link" href="#1">Home</a></li>     
-                        <li class="nav-item"><a class="nav-link" href="#1">Home</a></li>                   
+
+                        <li class="nav-item"><a class="nav-link" href="#1">Uno</a></li>
+                        <!-- <li class="nav-item" id="ingles"><a class="nav-link" href="#1">One</a></li> -->
+
+                        <li class="nav-item"><a class="nav-link" href="#2">Dos</a></li> 
+                        <!-- <li class="nav-item" id="ingles"><a class="nav-link" href="#1">Two</a></li>   -->
+
+                        <li class="nav-item"><a class="nav-link" href="#1">Tres</a></li>
+                        <!-- <li class="nav-item" id="ingles"><a class="nav-link" href="#1">Three</a></li>  -->
+
+                        <li class="nav-item"><a class="nav-link" href="#1">Cuatro</a></li>
+                        <!-- <li class="nav-item" id="ingles"><a class="nav-link" href="#1">Four</a></li> -->
+
+                        <li class="nav-item flags">
+                            <button type="button" class="btn btn-dark" onclick="return TraducirAlEspaniol()" id="boton1">
+                                <img class="flag" src="assets/es.svg" height="25xp" width="25xp">
+                            </button>
+                            <button type="button" class="btn btn-dark" onclick="return TraducirAlIngles()" id="boton1">
+                                <img class="flag" src="assets/gb.svg" height="25xp" width="25xp">
+                            </button>
+                        </li>                   
                     </ul>
                 </div>
             </div>
@@ -33,7 +50,8 @@
             <source src="assets/v1.mp4" >
         </video>
         <div class="position-absolute top-50 start-50 translate-middle">
-            <h1 class="display-1 tit">C20 Web Development</h1>
+            <!-- <h1 class="display-1 tit" id="espaniol" >C20 Desarrollo Web</h1> -->
+            <h1 class="display-1 tit" id="ingles" >C20 Web Development</h1>
         </div>
     </header>
 
@@ -87,85 +105,210 @@
                 <div class="bar"> </div>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                <div class="col_img text-center">
+
+                <div class="col_img text-center">  
                     <div class="c_front">
-
-
                         <button class="btn_img" id="btn_modal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-
-
                             <img src="assets/cami.png" class="c_f_img"></img>   
                         </button>
                     </div>
-                    <div class="c_back" id="Cami"> 
-                        <p>
-
-                        </p>
-                    </div>
-
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Launch demo modal
-                      </button>
-            </div>
-
+                    <!-- <div class="c_back" id="Cami"><p></p></div> -->
+                </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                                        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            Level 1: .col-sm-9
+                                            <div class="row">
+                                                <div class="col-8 col-sm-6">
+                                                    Level 2: .col-8 .col-sm-6
+                                                </div>
+                                                <div class="col-4 col-sm-6">
+                                                    Level 2: .col-4 .col-sm-6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                          ...
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
- 
-
-                <div class="col_img text-center">
-                    <div class="c_front">
-                        <button class="btn_img">
-                            <img src="assets/facu.png" class="c_f_img">
-                        </button>
-                    </div>
-                    <div class="c_back" id="Facu">
-                        <p>
-
-                        </p>
                     </div>
                 </div>
-                <div class="col_img text-center">
+
+                <div class="col_img text-center">  
                     <div class="c_front">
-                        <button class="btn_img">
-                            <img src="assets/nichi2.png" class="c_f_img">
+                        <button class="btn_img" id="btn_modal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="assets/facu.png" class="c_f_img"></img>   
                         </button>
                     </div>
-                    <div class="c_back" id="Nico">
-                        <p>
-
-                        </p>
+                    <!-- <div class="c_back" id="Cami"><p></p></div> -->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                                        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            Level 1: .col-sm-9
+                                            <div class="row">
+                                                <div class="col-8 col-sm-6">
+                                                    Level 2: .col-8 .col-sm-6
+                                                </div>
+                                                <div class="col-4 col-sm-6">
+                                                    Level 2: .col-4 .col-sm-6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col_img text-center">
+
+                <div class="col_img text-center">  
                     <div class="c_front">
-                        <button class="btn_img">
-                            <img src="assets/fran.png" class="c_f_img">
+                        <button class="btn_img" id="btn_modal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="assets/nichi2.png" class="c_f_img"></img>   
                         </button>
                     </div>
-                    <div class="c_back" id="Frane"> 
-                        <p>
-
-                        </p>
+                    <!-- <div class="c_back" id="Cami"><p></p></div> -->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                                        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            Level 1: .col-sm-9
+                                            <div class="row">
+                                                <div class="col-8 col-sm-6">
+                                                    Level 2: .col-8 .col-sm-6
+                                                </div>
+                                                <div class="col-4 col-sm-6">
+                                                    Level 2: .col-4 .col-sm-6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
-                </div>  
+                </div>
+
+                <div class="col_img text-center">  
+                    <div class="c_front">
+                        <button class="btn_img" id="btn_modal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="assets/fran.png" class="c_f_img"></img>   
+                        </button>
+                    </div>
+                    <!-- <div class="c_back" id="Cami"><p></p></div> -->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                                        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            Level 1: .col-sm-9
+                                            <div class="row">
+                                                <div class="col-8 col-sm-6">
+                                                    Level 2: .col-8 .col-sm-6
+                                                </div>
+                                                <div class="col-4 col-sm-6">
+                                                    Level 2: .col-4 .col-sm-6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -233,7 +376,8 @@
         <div class="container-fluid f_main">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 redes p-3">
             <!-- IZQ -->
-            <button type="button" class="btn btn-dark" onclick="return traducir()" id="boton1">Translate</button>
+
+            <!-- <button type="button" class="btn btn-dark" onclick="return traducir()" id="boton1">Translate</button> -->
 
                 <div class="f_r_col" id="español">
                     <h3>Columna 1</h3>
@@ -241,42 +385,45 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum amet ullam aspernatur ratione voluptas, quae eos nihil reiciendis, ipsa maiores dolores quis distinctio, totam ex aliquid deserunt omnis dolorum? Consectetur.</p>
                 </div>
 
-                <div class="f_r_col" id="ingles">
+                <!-- <div class="f_r_col" id="ingles">
                     <h3>Column</h3>
                     <p>verga </p>
                     <p>trola</p>
-                </div>
+                </div> -->
 
             </div>
             <!-- FORMULARIO -->
         <form name="formulario" method="POST" action="Conexion.php">
-            <div class="row formulario p-3">
+            <div class="formulario p-3">
                 <h3>¡No dudes en contactarnos!</h3>
                 <div class="row mb-2">
 
                     <div class="col">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Name" aria-label="Name" name="name">
+                        <!-- <label for="name" class="form-label">Nombre</label> -->
+                        <input type="text" class="form-control" aria-label="Name" name="name" placeholder="Nombre">
                     </div>
                     <div class="col">
-                        <label for="surname" class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="Email" aria-label="Email" name="email">
+                        <!-- <label for="surname" class="form-label">Email</label> -->
+                        <input type="email" class="form-control" aria-label="Email" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col mb-2">
 
-                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-                        <input type="tel" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Telephone" name="tel">
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Telefono de contacto</label> -->
+                        <input type="tel" class="form-control mb-2" id="exampleFormControlInput1" name="tel" placeholder="Tel">
 
-                        <label for="exampleFormControlTextarea1" class="form-label">Coment</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment"></textarea>
-
-                        <input type="submit">
-                    </div>
-                    
+                        <!-- <label for="exampleFormControlTextarea1" class="form-label">Comentario</label> -->
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment" placeholder="Comentario"></textarea>
+                    </div>                       
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="row mb-2">
+                    
+                    <div class="col mb-2">
+                        <button type="submit" class="btn btn-primary" style="width: 100px !important;">Enviar</button>
+                    </div>
+                    <div class="col mb-2"></div>
+                </div>    
             </div>
         </form>
         <?php
@@ -290,16 +437,15 @@
             </div>
         </div>
     </footer>
+<script src="app.js"></script>
+<script src="translate.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="app.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.9.1/firebase-app.js"></script>
-
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="/__/firebase/8.9.1/firebase-analytics.js"></script>
-
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
 </body>
