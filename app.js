@@ -15,6 +15,9 @@ function traducir() {
     document.getElementById("español").style.display="none";
 }
 
+function showModal() {
+    document.getElementById("pageContent").style.opacity = "0.5";
+
 // MODAL
 // var myModal = document.getElementById('modal')
 // var myInput = document.getElementById('btn_modal')
