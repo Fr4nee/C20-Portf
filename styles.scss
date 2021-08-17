@@ -29,6 +29,10 @@ body {
     width: 100% !important;
     transition: 0.3s ease-in-out;
 }
+.logo_nv {
+    height: 45px;
+    width: 45px;
+}
 .nav-active {
     background-color:rgb(0, 0, 0);
 }
@@ -72,6 +76,10 @@ body {
     position: relative ;
     color: rgb(169, 214, 250);     
 }
+.logo_header {
+    height: 200px;
+    width: 200px;
+}
 
 // MAIN
 .main {
@@ -80,7 +88,7 @@ body {
 }
 // subtitulos
 .subtit {
-    margin-top: 1em;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,9 +103,9 @@ body {
 }
 
 //SERVICIOS
-.SERV {
-    margin-bottom: 5em;
-    margin-top: 4em;
+#s {
+    margin-bottom: 2.5em;
+    margin-top: 1em;
 }
 .serv_desc {
     width: 40%;
@@ -108,12 +116,12 @@ body {
 }
 
 //CCTP
-.CCTP {
+#cctp {
 
 }
 
 // NOSOTROS 
-.NOSOTROS {
+#sn {
 
 }
 .equipo {
@@ -161,9 +169,21 @@ body {
     border-radius: 100%;
     margin: auto;
     display: block;
-    border: 5px solid salmon;
     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
+    .cami {
+        border: 5px solid #183f57;
+    }
+    .facu {
+        border: 5px solid #f08036;
+    }
+    .nico{
+        border: 5px solid #fecc45;
+    }
+    .fran {
+        border: 5px solid #46b594;
+    }
+
 .fade {
     width: 100%;
     height: 100%;
@@ -173,7 +193,7 @@ body {
 }
 
 // PROYECTOS
-.PROYECTOS {
+#p {
 
 }
 .p_col .card {
@@ -188,12 +208,12 @@ body {
 }
 
 // PORQUE TRABAJAR CON NOSOTROS
-.PTCN {
-    
+#ptcn {
+    margin-bottom: 3em;
 }
 
 //FOOTER
-.footer {
+#c {
     width: 100%;
     height: 100%;
     background-color: rgb(81, 152, 199);
@@ -228,20 +248,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .subtit::before {
     display: block;
     content: " ";
-    margin-top: 60px;
+    margin-top: 55px;
     height: 60px;
     visibility: hidden;
 }

@@ -31,6 +31,11 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.logo_nv {
+  height: 45px;
+  width: 45px;
+}
+
 .nav-active {
   background-color: black;
 }
@@ -80,13 +85,18 @@ body {
   color: #a9d6fa;
 }
 
+.logo_header {
+  height: 200px;
+  width: 200px;
+}
+
 .main {
   width: 100%;
   min-height: 100vh;
 }
 
 .subtit {
-  margin-top: 1em;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,9 +110,9 @@ body {
   margin-bottom: 30px;
 }
 
-.SERV {
-  margin-bottom: 5em;
-  margin-top: 4em;
+#s {
+  margin-bottom: 2.5em;
+  margin-top: 1em;
 }
 
 .serv_desc {
@@ -164,8 +174,23 @@ body {
   border-radius: 100%;
   margin: auto;
   display: block;
-  border: 5px solid salmon;
   box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.cami {
+  border: 5px solid #183f57;
+}
+
+.facu {
+  border: 5px solid #f08036;
+}
+
+.nico {
+  border: 5px solid #fecc45;
+}
+
+.fran {
+  border: 5px solid #46b594;
 }
 
 .fade {
@@ -188,7 +213,11 @@ body {
   margin-bottom: 4em;
 }
 
-.footer {
+#ptcn {
+  margin-bottom: 3em;
+}
+
+#c {
   width: 100%;
   height: 100%;
   background-color: #5198c7;
@@ -223,7 +252,7 @@ body {
 .subtit::before {
   display: block;
   content: " ";
-  margin-top: 60px;
+  margin-top: 55px;
   height: 60px;
   visibility: hidden;
 }
