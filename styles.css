@@ -66,6 +66,14 @@ body {
   border: 1px solid rgba(255, 0, 0, 0);
 }
 
+#boton2 {
+  margin: 2px;
+  margin-right: 15px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+
 .flag {
   border-radius: 25% 25% 25% 25%;
 }
@@ -232,5 +240,9 @@ body {
   margin-top: 60px;
   height: 60px;
   visibility: hidden;
+}
+
+#warnings {
+  color: red;
 }
 /*# sourceMappingURL=styles.css.map */
