@@ -18,8 +18,8 @@ html::-webkit-scrollbar {
 
 body {
   width: 100%;
-  height: 100%;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .header {
@@ -45,6 +45,29 @@ body {
   display: flex;
   justify-content: space-evenly !important;
   width: 100%;
+}
+
+.flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80px;
+}
+
+#boton1 {
+  margin: 2px;
+  margin-right: 15px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.flag {
+  border-radius: 25% 25% 25% 25%;
 }
 
 .hvid {
@@ -130,46 +153,13 @@ body {
   box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
 }
 
-.col_img:hover {
-  transform: rotateY(180deg);
+.fade {
+  width: 100%;
+  height: 100%;
 }
 
-.c_back {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  display: block;
-  transform: rotateY(180deg);
-  border: 5px solid springgreen;
-  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-  backface-visibility: hidden;
-  border-radius: 100%;
-}
-
-.c_back h2 p {
-  border: 1px solid green;
-}
-
-#Cami {
-  background-color: black;
-  z-index: -1;
-}
-
-#Nico {
-  background-color: brown;
-}
-
-#Frane {
-  background-color: saddlebrown;
-}
-
-#Facu {
-  background-color: rgba(0, 0, 0, 0.65);
+.modal-content {
+  width: 100%;
 }
 
 .p_col .card {
@@ -185,15 +175,17 @@ body {
 
 .footer {
   width: 100%;
-  height: 370px;
+  height: 100%;
   background-color: #5198c7;
 }
 
 .f_main {
   display: flex;
   width: 100%;
-  min-height: calc(350px - 30px);
-  justify-content: space-evenly;
+  min-height: calc(370px - 30px);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .redes {
@@ -211,17 +203,8 @@ body {
 .brand {
   width: 100%;
   height: 30px;
-  background-color: black;
-  color: aliceblue;
-}
-
-.fade {
-  width: 100%;
-  height: 100%;
-}
-
-.modal-content {
-  width: 100%;
+  background-color: #181818;
+  color: #979797;
 }
 
 #5cbca8

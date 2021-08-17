@@ -1,11 +1,6 @@
 @import url(./node_modules/bootstrap/scss/bootstrap.scss);
 
 // HTML Y BODY
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html { 
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -17,13 +12,13 @@ html::-webkit-scrollbar {
 }
 body {
     width: 100%;
-    height: 100%;
     box-sizing: content-box;
 }
 // HEADER
 .header {
     width: 100%;
     height: 100vh;
+    background-color:rgba(0, 0, 0, 0.65);
     z-index: 0;
 }
 .navbar {
@@ -41,6 +36,30 @@ body {
     display: flex;
     justify-content: space-evenly !important;
     width: 100%;
+}
+.flags {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+}
+#boton1 {
+    // margin-top: 1px;
+    margin: 2px;
+    margin-right: 15px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+#boton2{
+    // margin-top: 1px;
+    margin: 2px;
+    margin-right: 15px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+.flag {
+    border-radius: 25% 25% 25% 25%;
 }
 .hvid {
     object-fit: cover;
@@ -80,7 +99,7 @@ body {
 }
 .s_img_demo {
     width: 100px;
-    height: 100vh;
+    height: 100px;
 }
 .col_img{
     margin-top: 2%;
@@ -115,41 +134,49 @@ body {
     border: 5px solid salmon;
     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
-.col_img:hover{
-    transform: rotateY(180deg);
-}
-.c_back{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    display: block;
-    transform: rotateY(180deg);
-    border: 5px solid springgreen;
-    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-    backface-visibility: hidden;
-    border-radius: 100%;
-}
-.c_back h2 p {
-    border: 1px solid green;
-}
+// .col_img:hover{
+//     transform: rotateY(180deg);
+// }
+// .c_back{
+//     width: 300px;
+//     height: 300px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     margin: auto;
+//     display: block;
+//     transform: rotateY(180deg);
+//     border: 5px solid springgreen;
+//     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+//     backface-visibility: hidden;
+//     border-radius: 100%;
+// }
+// .c_back h2 p {
+//     border: 1px solid green;
+// }
 
-#Cami{
-    background-color: black;
-    z-index: -1;
+// #Cami{
+//     background-color: black;
+//     z-index: -1;
+// }
+// #Nico{
+//     background-color: brown;
+// }
+// #Frane{
+//     background-color: saddlebrown;
+// }
+// #Facu{
+//     background-color: rgba(0,0,0,0.65);
+// }
+
+.fade {
+    width: 100%;
+    height: 100%;
 }
-#Nico{
-    background-color: brown;
-}
-#Frane{
-    background-color: saddlebrown;
-}
-#Facu{
-    background-color: rgba(0,0,0,0.65);
+.modal-content{
+    width: 100%;
 }
 
 .p_col .card {
@@ -165,13 +192,13 @@ body {
 
 .footer {
     width: 100%;
-    height: 370px;
+    height: 100%;
     background-color: rgb(81, 152, 199);
 }
 .f_main {
     display: flex;
     width: 100%;
-    min-height: calc(350px - 30px);
+    min-height: calc(370px - 30px);
     justify-content: space-evenly;
 }
 .redes {
@@ -186,26 +213,9 @@ body {
 .brand {
     width: 100%;
     height: 30px;
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(24, 24, 24);
+    color: rgb(151, 151, 151);
 }
-
-
-.fade {
-    width: 100%;
-    height: 100%;
-}
-.modal-content{
-    width: 100%;
-}
-
-
-
-
-
-
-
-
 
 #5cbca8
 #079a9c
