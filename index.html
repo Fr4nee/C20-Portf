@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/logoc20.png"/>
+
     <title>Portfolio | C20</title>
 </head>
 <body>
@@ -23,12 +25,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 me-auto mb-lg-0 ">
-                        <li class="nav-item"><a class="nav-link" href="#s">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#cctp">Como creamos tu proyecto</a></li> 
-                        <li class="nav-item"><a class="nav-link" href="#sn">Sobre nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#p">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#ptcn">¿Porqué trabajar con nosotros?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#c">Contacto</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="#s">Servicios</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="#cctp">Como creamos tu proyecto</a></li> 
+                        <li class="nav-item" ><a class="nav-link" href="#sn">Sobre nosotros</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="#p">Proyectos</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="#ptcn">¿Porqué trabajar con nosotros?</a></li>
                         <li class="nav-item flags">
                             <a href="index.html">
                                 <button type="button" class="btn btn-dark" id="boton1" id="botonEs">
@@ -67,23 +68,23 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio vitae commodi officiis cupiditate. Molestiae, quaerat perferendis non tenetur eaque maxime modi eius laborum dignissimos voluptatum ex dolor ad eum.</p>
             </div>        
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 serv">
-                <div class="col text-center">
+                <div data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-delay="1200" class="col text-center servicio">
                     <img class="s_img_demo mb-2" src="assets/istotypedemo.png" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias et tempora, maxime fugit sequi architecto porro soluta odit ratione asperiores quasi unde ipsa velit expedita ex omnis vero laborum.</p>
                 </div>
-                <div class="col text-center">
+                <div data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="1000" class="col text-center servicio">
                     <img class="s_img_demo mb-2" src="assets/istotypedemo.png" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias et tempora, maxime fugit sequi architecto porro soluta odit ratione asperiores quasi unde ipsa velit expedita ex omnis vero laborum.</p>
                 </div>
-                <div class="col text-center">
+                <div data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-delay="800" class="col text-center servicio">
                     <img class="s_img_demo mb-2" src="assets/istotypedemo.png" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias et tempora, maxime fugit sequi architecto porro soluta odit ratione asperiores quasi unde ipsa velit expedita ex omnis vero laborum.</p>
                 </div>
-                <div class="col text-center">
+                <div data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="600" class="col text-center servicio">
                     <img class="s_img_demo mb-2" src="assets/istotypedemo.png" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias et tempora, maxime fugit sequi architecto porro soluta odit ratione asperiores quasi unde ipsa velit expedita ex omnis vero laborum.</p>
                 </div>
-                <div class="col text-center">
+                <div data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-delay="400" class="col text-center servicio">
                     <img class="s_img_demo mb-2" src="assets/istotypedemo.png" >
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias et tempora, maxime fugit sequi architecto porro soluta odit ratione asperiores quasi unde ipsa velit expedita ex omnis vero laborum.</p>
                 </div>
@@ -103,14 +104,14 @@
 
 
         <!-- NOSOTROS -->
-        <div class="container-fluid NOSOTROS" id="sn">
+        <div class="container-fluid" id="sn">
             <!-- subtitulo -->
             <div class="container subtit">
                 <h2>Sobre nosotros - Equipo</h2>
                 <div class="bar"> </div>
             </div>
             <div class="container text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio illo consequuntur earum nulla numquam, tempore facere magnam. Magnam aspernatur veniam quia mollitia aliquam, obcaecati dignissimos rem deleniti, aut beatae saepe.</div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 equipo">
+            <div data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-delay="800" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 equipo">
 
                 <div class="col_img text-center">  
                     <div class="c_front">
@@ -439,6 +440,12 @@
             </div>
         </div>
     </footer>
+    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 <script src="app.js"></script>
 <script src="validación.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
