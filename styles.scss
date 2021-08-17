@@ -78,28 +78,58 @@ body {
     width: 100%;
     min-height: 100vh;  
 }
+// subtitulos
 .subtit {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+// barra divisoria
 .bar {
     width: 220px;
     height: 5px;
     background-color: black;
     display: block;
+    margin-bottom: 30px;
 }
-.au {
-    width: 40%;
-}
-.serv {
+
+//SERVICIOS
+.SERV {
     margin-bottom: 5em;
     margin-top: 4em;
+}
+.serv_desc {
+    width: 40%;
 }
 .s_img_demo {
     width: 100px;
     height: 100px;
+}
+
+//CCTP
+.CCTP {
+
+}
+
+// NOSOTROS 
+.NOSOTROS {
+
+}
+.equipo {
+    opacity: 0;
+    transition: all 0.7s;
+}
+.mostrarArriba {
+    animation: mostrarArrriba 1s;
+}
+@keyframes mostrarArrriba {
+    0% {
+        transform: translateY(-160px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .col_img{
     margin-top: 2%;
@@ -110,7 +140,7 @@ body {
     right: 0;
     bottom: 0;
     height: 100%;
-    position: relative;
+    // position: relative;
     transition: all 1s ease;
     transform-style: preserve-3d;
 }
@@ -134,43 +164,6 @@ body {
     border: 5px solid salmon;
     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
-// .col_img:hover{
-//     transform: rotateY(180deg);
-// }
-// .c_back{
-//     width: 300px;
-//     height: 300px;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     margin: auto;
-//     display: block;
-//     transform: rotateY(180deg);
-//     border: 5px solid springgreen;
-//     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-//     backface-visibility: hidden;
-//     border-radius: 100%;
-// }
-// .c_back h2 p {
-//     border: 1px solid green;
-// }
-
-// #Cami{
-//     background-color: black;
-//     z-index: -1;
-// }
-// #Nico{
-//     background-color: brown;
-// }
-// #Frane{
-//     background-color: saddlebrown;
-// }
-// #Facu{
-//     background-color: rgba(0,0,0,0.65);
-// }
-
 .fade {
     width: 100%;
     height: 100%;
@@ -179,6 +172,10 @@ body {
     width: 100%;
 }
 
+// PROYECTOS
+.PROYECTOS {
+
+}
 .p_col .card {
     top: 0;
     left: 0;
@@ -190,6 +187,12 @@ body {
     margin-bottom: 4em;
 }
 
+// PORQUE TRABAJAR CON NOSOTROS
+.PTCN {
+    
+}
+
+//FOOTER
 .footer {
     width: 100%;
     height: 100%;
@@ -204,12 +207,19 @@ body {
 .redes {
     width: 500px;
 }
+// TECNOLOGIAS
+.TECNOLOGIAS {
+
+}
 .f_r_col {
     width: 100%;
 }
+
+// FORMULARIO
 .formulario {
     width: 500px;
 }
+// BRAND
 .brand {
     width: 100%;
     height: 30px;
