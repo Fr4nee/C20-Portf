@@ -1,13 +1,14 @@
 <?php
 $conexion = mysqli_connect('c20-portf.c0rxhojittix.us-east-2.rds.amazonaws.com','admin','laconchadetumadre','cveinte')or die(mysqli_error($mysqli));
-$retornoEs = header('Location: index.html');
+$retornoEn = header('Location: indexEn.html');
 
+    Insertar2($conexion,$retornoEn,$modalExitoEn);
+    $modalExitoEn = '<script> AlertaExitoEn() </script>';
 
-    Insertar($conexion,$retornoEs,$modalExito);
-    $modalExito = '<script> AlertaExitoEs() </script>';
-    function Insertar($conexion, $retornoEs,$modalExito){
-       
- 
+   
+
+    function Insertar2($conexion, $retornoEn,$modalExitoEn){
+   
         $nombre = $_POST['name'];
         $email = $_POST['email'];
         $telefono = $_POST['tel'];
@@ -19,17 +20,6 @@ $retornoEs = header('Location: index.html');
         mysqli_close($conexion);
     
     }
-
-
-
-
-    
-    
-
-
- 
-    
-    
 
 
 

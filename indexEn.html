@@ -30,13 +30,13 @@
                         <li class="nav-item"><a class="nav-link" href="#1">Four</a></li>
 
                         <li class="nav-item flags">
-                            <a href="index.html">
-                                <button type="button" class="btn btn-dark" id="boton1" id="botonEs">
+                            <a href="index.html" id="Es">
+                                <button type="button" class="btn btn-dark" id="boton1" >
                                     <img class="flag" src="assets/es.svg" height="25xp" width="25xp">
                                 </button>
                             </a>
-                            <a href="indexEn.html">
-                                <button type="button" class="btn btn-dark" id="boton1" id="botonEn">
+                            <a href="indexEn.html" id=En>
+                                <button type="button" class="btn btn-dark" id="boton1">
                                     <img class="flag" src="assets/gb.svg" height="25xp" width="25xp">
                                 </button>
                             </a>
@@ -393,7 +393,7 @@
 
             </div>
             <!-- FORMULARIO -->
-        <form name="formulario" method="POST" action="Conexion.php" id="form">
+        <form name="formulario" method="POST" action="ConexionEn.php" id="form">
             <div class="formulario p-3">
                 <h3>¡No dudes en contactarnos!</h3>
                 <div class="row mb-2">
@@ -401,13 +401,13 @@
                     <div class="col">
                         <!-- <label for="name" class="form-label">Nombre</label> -->
                         <input type="text" class="form-control" aria-label="Name" name="name" id="name" placeholder="Nombre"> 
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  
                     </div>
                    
                     <div class="col">
                         <!-- <label for="surname" class="form-label">Email</label> -->
                         <input type="email" class="form-control" aria-label="Email" name="email" id="email" placeholder="Email">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                     
                     </div>
                   
                 </div>
@@ -416,17 +416,17 @@
 
                         <!-- <label for="exampleFormControlInput1" class="form-label">Telefono de contacto</label> -->
                         <input type="tel" class="form-control mb-2" id="exampleFormControlInput1" name="tel" placeholder="Tel">  
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                
 
                         <!-- <label for="exampleFormControlTextarea1" class="form-label">Comentario</label> -->
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment" placeholder="Comentario"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style=" resize: none;" name="coment" placeholder="Comentario" id="coment"></textarea>
                     </div>
                        
                 </div>
                 <div class="row mb-2">
                     
                     <div class="col mb-2">
-                        <button type="submit" class="btn btn-primary" style="width: 100px !important;" onclick=" return AlertaExito()" >Enviar</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100px !important;" onclick=" return AlertaExitoEn()" >Enviar</button>
                         <p class="warnings" id="warnings"></p>
                     </div>
                     <div class="col mb-2"></div>
@@ -435,7 +435,7 @@
  
         </form>
         <?php
-        include("Conexion.php");
+        include("ConexionEn.php");
         ?>
         </div>
         <!-- BRAND -->
