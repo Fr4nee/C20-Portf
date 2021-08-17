@@ -1,20 +1,48 @@
 <?php
-
 $conexion = mysqli_connect('c20-portf.c0rxhojittix.us-east-2.rds.amazonaws.com','admin','laconchadetumadre','cveinte')or die(mysqli_error($mysqli));
+$idioma;
 
-Insertar($conexion);
 
-function Insertar($conexion){
 
-    $nombre = $_POST['name'];
-    $email = $_POST['email'];
-    $telefono = $_POST['tel'];
-    $comentario = $_POST['coment'];
+    if($idioma == ("#botonEs")){
+        $idioma = ("#botonEs");
+        $retorno = header('Location: index.html');
 
-    $consulta = "insert into `clientes` (nombre, email, telefono, comentario) VALUES ('$nombre','$email','$telefono','$comentario')";
+    }
+    else{
+        
+        $retorno = header('Location: indexEn.html');
+        $idioma = ("#botonEn");
 
-    mysqli_query($conexion,$consulta);
-    mysqli_close($conexion);
-};
+    }
+    
+  
+  
+    Insertar($conexion,$retorno,$modalExito, $idioma);
+    $modalExito = '<script> AlertaExito() </script>';
+  
+
+    function Insertar($conexion, $retorno,$modalExito, $idioma){
+    
+        $nombre = $_POST['name'];
+        $email = $_POST['email'];
+        $telefono = $_POST['tel'];
+        $comentario = $_POST['coment'];
+    
+        $consulta = "Insert Into clientes(nombre,email,telefono,comentario)
+        VALUES ('$nombre','$email','$telefono','$comentario')";
+        mysqli_query($conexion,$consulta);
+        mysqli_close($conexion);
+    
+    }
+    
+
+
+
+
+    
+   
+    
+   
 
 ?>
