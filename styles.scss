@@ -79,17 +79,12 @@ body {
 .logo_header {
     height: 200px;
     width: 200px;
-    animation: 1.5s rotate ease-in-out infinite;
-    transform-origin: 50% 50%;
+    transition: 1s;
 }
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.logo_header:hover {
+    transform: rotate(360deg);
 }
+
 
 // MAIN
 .main {
