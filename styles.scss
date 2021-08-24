@@ -42,7 +42,8 @@ body {
     width: 45px;
 }
 .nav-active {
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(17, 17, 17);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
 .navbar-nav {
     display: flex;
@@ -87,17 +88,12 @@ body {
 .logo_header {
     height: 200px;
     width: 200px;
-    animation: 1.5s rotate ease-in-out infinite;
-    transform-origin: 50% 50%;
+    transition: 1s;
 }
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.logo_header:hover {
+    transform: rotate(360deg);
 }
+
 
 // MAIN
 .main {
@@ -128,6 +124,7 @@ body {
 .serv_desc {
     width: 40%;
 }
+
 .s_img_demo {
     width: 100px;
     height: 100px;
@@ -142,23 +139,21 @@ body {
 
 // NOSOTROS 
 #sn {
-
+    .row p {
+        margin-bottom: 0px;
+    }
+    .progress {
+        margin-bottom: 15px;
+    }
+    .listRedes li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    ion-icon {
+        font-size: 25px;
+    }
 }
-// .equipo {
-//     opacity: 0;
-//     transition: all 0.7s;
-// }
-// .mostrarArriba {
-//     animation: mostrarArrriba 1s;
-// }
-// @keyframes mostrarArrriba {
-//     0% {
-//         transform: translateY(-160px);
-//     }
-//     100% {
-//         transform: translateX(0);
-//     }
-// }
+
 .col_img{
     margin-top: 2%;
     margin-bottom: 10%;

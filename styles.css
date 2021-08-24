@@ -44,7 +44,8 @@ body {
 }
 
 .nav-active {
-  background-color: black;
+  background-color: #111111;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-nav {
@@ -105,6 +106,7 @@ body {
 .logo_header {
   height: 200px;
   width: 200px;
+<<<<<<< HEAD
   -webkit-animation: 1.5s rotate ease-in-out infinite;
           animation: 1.5s rotate ease-in-out infinite;
   -webkit-transform-origin: 50% 50%;
@@ -131,6 +133,13 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+=======
+  transition: 1s;
+}
+
+.logo_header:hover {
+  transform: rotate(360deg);
+>>>>>>> 1b24cda29b88868ac06b81ea32ccbe6584a5f0e1
 }
 
 .main {
@@ -172,6 +181,23 @@ body {
 .s_img_demo {
   width: 100px;
   height: 100px;
+}
+
+#sn .row p {
+  margin-bottom: 0px;
+}
+
+#sn .progress {
+  margin-bottom: 15px;
+}
+
+#sn .listRedes li a {
+  color: black;
+  text-decoration: none;
+}
+
+#sn ion-icon {
+  font-size: 25px;
 }
 
 .col_img {
