@@ -14,6 +14,14 @@ body {
     width: 100%;
     box-sizing: content-box;
 }
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
 // HEADER
 .header {
     width: 100%;
@@ -28,6 +36,10 @@ body {
     text-align: center !important;
     width: 100% !important;
     transition: 0.3s ease-in-out;
+}
+.logo_nv {
+    height: 45px;
+    width: 45px;
 }
 .nav-active {
     background-color:rgb(0, 0, 0);
@@ -72,35 +84,81 @@ body {
     position: relative ;
     color: rgb(169, 214, 250);     
 }
+.logo_header {
+    height: 200px;
+    width: 200px;
+    animation: 1.5s rotate ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 // MAIN
 .main {
     width: 100%;
     min-height: 100vh;  
 }
+// subtitulos
 .subtit {
-    margin-top: 2em;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+// barra divisoria
 .bar {
     width: 220px;
     height: 5px;
     background-color: black;
     display: block;
+    margin-bottom: 30px;
 }
-.au {
+
+//SERVICIOS
+#s {
+    margin-bottom: 2.5em;
+    margin-top: 1em;
+}
+.serv_desc {
     width: 40%;
-}
-.serv {
-    margin-bottom: 5em;
-    margin-top: 4em;
 }
 .s_img_demo {
     width: 100px;
     height: 100px;
 }
+
+
+
+//CCTP
+#cctp {
+
+}
+
+// NOSOTROS 
+#sn {
+
+}
+// .equipo {
+//     opacity: 0;
+//     transition: all 0.7s;
+// }
+// .mostrarArriba {
+//     animation: mostrarArrriba 1s;
+// }
+// @keyframes mostrarArrriba {
+//     0% {
+//         transform: translateY(-160px);
+//     }
+//     100% {
+//         transform: translateX(0);
+//     }
+// }
 .col_img{
     margin-top: 2%;
     margin-bottom: 10%;
@@ -110,7 +168,6 @@ body {
     right: 0;
     bottom: 0;
     height: 100%;
-    position: relative;
     transition: all 1s ease;
     transform-style: preserve-3d;
 }
@@ -131,45 +188,20 @@ body {
     border-radius: 100%;
     margin: auto;
     display: block;
-    border: 5px solid salmon;
     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
-// .col_img:hover{
-//     transform: rotateY(180deg);
-// }
-// .c_back{
-//     width: 300px;
-//     height: 300px;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     margin: auto;
-//     display: block;
-//     transform: rotateY(180deg);
-//     border: 5px solid springgreen;
-//     box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-//     backface-visibility: hidden;
-//     border-radius: 100%;
-// }
-// .c_back h2 p {
-//     border: 1px solid green;
-// }
-
-// #Cami{
-//     background-color: black;
-//     z-index: -1;
-// }
-// #Nico{
-//     background-color: brown;
-// }
-// #Frane{
-//     background-color: saddlebrown;
-// }
-// #Facu{
-//     background-color: rgba(0,0,0,0.65);
-// }
+    .cami {
+        border: 5px solid #183f57;
+    }
+    .facu {
+        border: 5px solid #f08036;
+    }
+    .nico{
+        border: 5px solid #fecc45;
+    }
+    .fran {
+        border: 5px solid #46b594;
+    }
 
 .fade {
     width: 100%;
@@ -179,6 +211,10 @@ body {
     width: 100%;
 }
 
+// PROYECTOS
+#p {
+
+}
 .p_col .card {
     top: 0;
     left: 0;
@@ -190,10 +226,16 @@ body {
     margin-bottom: 4em;
 }
 
-.footer {
+// PORQUE TRABAJAR CON NOSOTROS
+#ptcn {
+    margin-bottom: 3em;
+}
+
+//FOOTER
+#c {
     width: 100%;
     height: 100%;
-    background-color: rgb(81, 152, 199);
+    background-color: rgb(153, 153, 153);
 }
 .f_main {
     display: flex;
@@ -204,12 +246,19 @@ body {
 .redes {
     width: 500px;
 }
+// TECNOLOGIAS
+.TECNOLOGIAS {
+
+}
 .f_r_col {
     width: 100%;
 }
+
+// FORMULARIO
 .formulario {
     width: 500px;
 }
+// BRAND
 .brand {
     width: 100%;
     height: 30px;
@@ -217,25 +266,11 @@ body {
     color: rgb(151, 151, 151);
 }
 
-#5cbca8
-#079a9c
-#036a9a
-#28366c
-
-
-
-
-
-
-
-
-
-
 
 .subtit::before {
     display: block;
     content: " ";
-    margin-top: 60px;
+    margin-top: 55px;
     height: 60px;
     visibility: hidden;
 }
@@ -245,3 +280,5 @@ body {
    color: red;
  
 }
+
+

@@ -16,6 +16,11 @@ body {
           box-sizing: content-box;
 }
 
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -31,6 +36,11 @@ body {
   width: 100% !important;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.logo_nv {
+  height: 45px;
+  width: 45px;
 }
 
 .nav-active {
@@ -92,13 +102,44 @@ body {
   color: #a9d6fa;
 }
 
+.logo_header {
+  height: 200px;
+  width: 200px;
+  -webkit-animation: 1.5s rotate ease-in-out infinite;
+          animation: 1.5s rotate ease-in-out infinite;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .main {
   width: 100%;
   min-height: 100vh;
 }
 
 .subtit {
-  margin-top: 2em;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,15 +157,16 @@ body {
   height: 5px;
   background-color: black;
   display: block;
+  margin-bottom: 30px;
 }
 
-.au {
+#s {
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+}
+
+.serv_desc {
   width: 40%;
-}
-
-.serv {
-  margin-bottom: 5em;
-  margin-top: 4em;
 }
 
 .s_img_demo {
@@ -141,7 +183,6 @@ body {
   right: 0;
   bottom: 0;
   height: 100%;
-  position: relative;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   -webkit-transform-style: preserve-3d;
@@ -169,9 +210,24 @@ body {
   border-radius: 100%;
   margin: auto;
   display: block;
-  border: 5px solid salmon;
   -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
           box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.cami {
+  border: 5px solid #183f57;
+}
+
+.facu {
+  border: 5px solid #f08036;
+}
+
+.nico {
+  border: 5px solid #fecc45;
+}
+
+.fran {
+  border: 5px solid #46b594;
 }
 
 .fade {
@@ -194,10 +250,14 @@ body {
   margin-bottom: 4em;
 }
 
-.footer {
+#ptcn {
+  margin-bottom: 3em;
+}
+
+#c {
   width: 100%;
   height: 100%;
-  background-color: #5198c7;
+  background-color: #999999;
 }
 
 .f_main {
@@ -230,14 +290,10 @@ body {
   color: #979797;
 }
 
-#5cbca8
-#079a9c
-#036a9a
-#28366c
 .subtit::before {
   display: block;
   content: " ";
-  margin-top: 60px;
+  margin-top: 55px;
   height: 60px;
   visibility: hidden;
 }
