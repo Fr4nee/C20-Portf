@@ -76,7 +76,7 @@ function AlertaExitoEs() {
                 entrar = true
             }
             if(!regexEmail.test(email.value) && email.value != ""){
-                warnings += `The email is not valid <br>`
+                warnings = `The email is not valid <br>`
                 entrar = true
             }
             if(email.value == ""){

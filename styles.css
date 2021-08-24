@@ -298,7 +298,14 @@ body {
   visibility: hidden;
 }
 
+.mb-2 #check {
+  position: absolute;
+  top: 95%;
+  border: 1px solid white;
+}
+
 #warnings {
   color: red;
+  border: 1px solid green;
 }
 /*# sourceMappingURL=styles.css.map */
